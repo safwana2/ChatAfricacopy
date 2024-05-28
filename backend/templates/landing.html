@@ -1,0 +1,230 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <br>
+        <img src="../static/images/hugging-face-emoji-clipart-lg.png" class="d-flex justify-content-center mx-auto rounded-circle bg-white" height="500" width="auto" alt="ChatAfrica">
+        <br>
+        <h1 class="d-flex justify-content-center">ChatAfrica 🤗</h1>
+        <br>
+        <p class="lead">ChatAfrica answers ALL your questions about Africa.
+            It is a text-based chatbot web application, that provides you with in-depth information about African people, their history and diverse cultures.
+            It is independent of locale and allows for global usage.</p>
+            <br>
+            <p class="lead">ChatAfrica is SUPER easy to use.</p>
+            <p class="lead">Get all the information you need about Africa with just a few clicks. Try it out now! :)</p>
+            <hr>
+            <div class="d-flex justify-content-center">
+            <a href="{{ url_for('auth.login') }}" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <hr> <hr>
+
+    <section class="hero">
+        <div class="row features">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h3 class="card-title">Examples</h3>
+                    <ul class="card-text">
+                        <li>"What is the capital of Kenya?"</li>
+                        <li>"How far back can you tell of African history?"</li>
+                        <li>"Why should we study african history?"</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title">Capabilities</h3>
+                <ul class="card-text">
+                    <li>Remembers what user said earlier in the conversation</li>
+                    <li>Allows user to provide follow-up corrections</li>
+                    <li>Trained to decline inappropriate requests</li>
+                </ul>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title">Limitations</h3>
+                <li>May occasionally generate incorrect information</li>
+                <li>May occasionally produce harmful instructions or biased content</li>
+                <li>Limited knowledge of world and events after 2022</li>
+            </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="features" id="features" style="text-align: center;">
+        <h2>Features</h2>
+        <div class="row features">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <img src="../static/images/feature1.jpg" height="300" width="auto" alt="Feature 1">
+                    <h5 class="card-title">Get instant answers to your questions</h5>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <img src="../static/images/feature2.jpg" height="300" width="auto" alt="Feature 2">
+                    <h5 class="card-title">Learn about Africa's history, culture, and more</h5>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <img src="../static/images/feature3.png" height="300" width="auto" alt="Feature 3">
+                    <h5 class="card-title">Chat with a friendly AI-powered chatbot</h5>
+                  </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <hr> <hr>
+
+     <section class="about" id="about" style="text-align: center;">
+        <h2>About</h2>
+        <h3>Project Inspiration</h3>
+        <iframe width="560" height="315" title="Project Overview"
+           src="https://www.youtube.com/embed/6HIYC45hjTc?autoplay=1&mute=1">
+        </iframe>
+     </section>
+
+     <hr> <hr>
+
+     <section class="team" id="team" style="text-align: center;">
+        <h2>Meet the team</h2>
+        <div class="row team">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                  <img class="card-img-top" src="../static/images/team-member1.jpeg" alt="Team member">
+                  <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-center">Janeth Oluebube Eni</h4>
+                    <p class="card-text d-flex justify-content-center">Polygot & Language Learning Coach | NLP Enthusiast</p>
+                    <ul class="list-inline d-flex justify-content-center">
+                      <li class="list-inline-item me-3">
+                        <a target="_blank" href="https://www.linkedin.com/in/janeth-eni-22a00b135/">
+                          <i class="fab fa-linkedin fa-xl"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item me-3">
+                        <a target="_blank" href="https://github.com/Eninetjanice">
+                          <i class="fab fa-github fa-xl"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item me-3">
+                        <a target="_blank" href="https://twitter.com/Eninetjanice">
+                          <i class="fab fa-twitter fa-xl"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img class="card-img-top" src="../static/images/team-member2.jpeg" alt="Team member">
+                  <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-center">Uchechukwu Samuel Ottah</h4>
+                    <p class="card-text d-flex justify-content-center">Mechanical Engineer turned Software Engineer</p>
+                    <ul class="list-inline d-flex justify-content-center">
+                      <li class="list-inline-item me-3">
+                        <a target="_blank" href="https://www.linkedin.com/in/uchechukwu-ottah-92968a162">
+                          <i class="fab fa-linkedin fa-xl"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item me-3">
+                        <a target="_blank" href="https://github.com/coderboy-exe">
+                          <i class="fab fa-github fa-xl"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item me-3">
+                        <a target="_blank" href="https://twitter.com/coderboy_exe">
+                          <i class="fab fa-twitter fa-xl"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img class="card-img-top" src="../static/images/team-member3.jpeg" alt="Team member">
+                  <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-center">Marriane Ojuang'</h4>
+                    <p class="card-text d-flex justify-content-center">A Software Engineer | Data Plumber👩‍🔧</p>
+                    <ul class="list-inline d-flex justify-content-center">
+                        <li class="list-inline-item me-3">
+                          <a target="_blank" href="https://www.linkedin.com/in/marriane-akeyo">
+                            <i class="fab fa-linkedin fa-xl"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item me-3">
+                          <a target="_blank" href="https://github.com/devmarrie">
+                            <i class="fab fa-github fa-xl"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item me-3">
+                          <a target="_blank" href="https://twitter.com/devmarrie">
+                            <i class="fab fa-twitter fa-xl"></i>
+                          </a>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+     </section>
+     <!-- Testimonials section -->
+     <section class="features" id="features" style="text-align: center;"> 
+      <h2>Testimonial</h2>
+      <div class="row">  
+          <div class="column">
+              <h3>Student</h3>
+              <p>"This chatbot is amazing! It has answered all of my questions about Africa and more!
+                  I was able to ask the bot about Africa and get precise and thorough
+                  responses to my queries regarding the continent's geography, 
+                  history and various cultures."
+              </p>
+          </div>
+          <div class="column">
+              <h3>Researcher</h3>
+              <p>"ChatAfrica assisted me in compiling statistical data about
+                  different facets of African culture, including demography,
+                  economics, and health. I highly recommend it to all"
+              </p>
+          </div>
+          <div class="column">
+              <h3>Tourist</h3>
+              <p>"I used ChatAfrica to organize my vacation to Africa,
+                  enquiring about the need for a visa, suggested destinations,
+                  activities and local customs depending on my budget, and it was quite helpful."
+              </p>
+          </div>
+          <div class="column">
+              <h3>Wildlife Enthusiast</h3>
+              <p>"As someone with a keen interest in African wildlife, I got
+                  details about the various animal species on the continent,
+                  their habitats, and conservation techniques. I love ChatAfrica!"
+              </p>
+          </div>
+      </div>     
+    </section>
+    
+  </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+      <img src="../static/images/hugging-face-emoji-clipart-lg.png" class="d-flex justify-content-center mx-auto rounded-circle bg-white" height="400" width="auto" alt="ChatAfrica">
+      <h2>Login</h2>
+      <p>Use your Google account to sign in.</p>
+      <hr>
+      <div class="container">
+        <div class="row justify-content-center">
+          <a href="{{ url_for('auth.login') }}" class="btn btn-primary btn-lg"><i class="fa fa-google fa-fw"></i> Sign in with Google</a>
+        </div>
+      </div>
+      <div class="bottom-container">
+        <div class="row">
+          <div class="col text-center">
+            <p>Don't have an account?</p>
+            <a href="{{ url_for('auth.login') }}" style="color:black" class="btn btn-link">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr><hr>
+    <!-- End Login Form -->
+
+{% endblock %}
